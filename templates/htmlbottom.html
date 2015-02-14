@@ -1,4 +1,23 @@
 <script src="/static/js/jquery1-11-1.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
+<script>
+$('a[href^="#"]').on('click',function(e){
+			e.preventDefault();
+			var target=this.hash,
+			$target=$(target),x=150;
+			$('html,body').animate({
+				'scrollTop': $target.offset().top-100
+
+
+
+				},1000,'swing',function(){
+
+				//                   window.location.hash = target;
+
+				});
+
+			});
+
+</script>
 </body>
 </html>
