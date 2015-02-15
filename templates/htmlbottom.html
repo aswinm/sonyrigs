@@ -17,6 +17,12 @@ $('a[href^="#"]').on('click',function(e){
 				});
 
 			});
+		if(window.location.search.indexOf("submit=True") > -1)
+			alert("We have received your request and will return back to you shortly");
+		if(window.location.search.indexOf("submit=False") > -1)
+			alert("There has been some error while submitting the form. Please try again");
+		
+
 
 </script>
 </body>

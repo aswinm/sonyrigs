@@ -96,6 +96,6 @@ STATICFILES_DIRS=(
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'sonyrigsmail@gmail.com'
-EMAIL_HOST_PASSWORD = 'iamaswin'
+EMAIL_HOST_USER = 'aswinmurugesh94@gmail.com'
+EMAIL_HOST_PASSWORD = 'lttgcsylurqkoxux'
 EMAIL_PORT = 587

@@ -109,11 +109,12 @@ Wishing joyous drilling!!<br><br>
 	<div class="row">
 		<div class="col-md-4"></div>
 		<div class="col-md-4">
-	<form id="contactform" align="center" style="margin-top:30px;">
-		<input type="text" id="name" placeholder="Name" class="form-control" required><br>
-		<input type="email" id="email" placeholder="Email" class="form-control" required><br>
-		<input type="text" id="subject" placeholder="Subject" class="form-control" required><br>
-		<textarea id="message" placeholder="Message" class="form-control" rows=5 required></textarea><br>
+	<form id="contactform" align="center" style="margin-top:30px;" method="post" action="/sendmail">
+		{% csrf_token %}
+		<input type="text" id="name" placeholder="Name" class="form-control" name="name" required><br>
+		<input type="email" id="email" placeholder="Email" class="form-control" name="email" required><br>
+		<input type="text" id="subject" placeholder="Subject" class="form-control" name="subject" required><br>
+		<textarea id="message" placeholder="Message" class="form-control" rows=5 name="message" required></textarea><br>
 		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 	</div>
