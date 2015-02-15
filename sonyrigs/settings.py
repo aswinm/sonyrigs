@@ -92,3 +92,10 @@ STATIC_ROOT = os.path.join(BASE_DIR,"stat")
 STATICFILES_DIRS=(
         os.path.join(BASE_DIR,"static"),
         )
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sonyrigsmail@gmail.com'
+EMAIL_HOST_PASSWORD = 'iamaswin'
+EMAIL_PORT = 587

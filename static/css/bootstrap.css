@@ -6286,6 +6286,11 @@ input{
 	color:white;
 	min-height:100%;
 	min-width:100%;
+	padding-left:5%;
+}
+
+.accessories .row{
+	padding-top:2%;
 }
 .services{
 	min-height:100%;
