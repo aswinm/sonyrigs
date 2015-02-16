@@ -38,6 +38,7 @@ def products(request,cid):
     return render(request,"products_list.html",{'page_title': c.name,'product_list':p,'p_li':p_li})
 
 def product(request,pid):
+    
     p = Product.objects.filter(url=pid).first()
     if not p:
         return HttpResponseRedirect("/")
