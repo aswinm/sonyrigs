@@ -6,6 +6,9 @@ from django.http import HttpResponseRedirect,HttpResponse
 def index(request):
     return render(request,"index.html",{'page_title':'Sony Borewells'})
 
+def gallery(request):
+    return render(request,"gallery.html",{'page_title':'Gallery | Sony Borewells'})
+
 def sendmail(request):
     if request.method == "POST":
         det = request.POST

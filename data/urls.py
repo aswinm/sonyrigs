@@ -4,4 +4,5 @@ from django.conf.urls import url,patterns
 urlpatterns = patterns('',
         url(r'^$',views.index),
         url(r'^sendmail/?$',views.sendmail),
+        url(r'^gallery/?$',views.gallery),
         )
