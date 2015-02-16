@@ -1,0 +1,23 @@
+{% include "othtop.html" %}
+
+	<div class="prod_desc">
+		<div class="row">
+			<div class="col-md-4">	
+			</div>
+			<div class="col-md-6">
+				<img src="{{ prod.image.url }}" class="product_image">
+			</div>
+		</div>
+		<table class="table product_table">
+			<tr>
+				<th>Title</th>
+				<th>Specifics</th>
+				{% for  item in content %}
+				<tr>
+					<td>{{ item.name}}</td>
+					<td>{{ item.data}}</td>
+				</tr>
+				{% endfor %}
+		</table>
+	</div>
+{% include "htmlbottom.html" %}

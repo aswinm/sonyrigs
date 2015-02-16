@@ -1,0 +1,25 @@
+{% include "othtop.html" %}
+	<div class="products_page">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+	
+		
+				{% for product_list in p_li %}
+				<div class="row">
+		{% for product in product_list %}
+
+			
+	<a href="/product/{{ product.url }}"><div class="col-md-3">
+			{{ product.url}}
+	<img src="{{ product.image.url}}" class="prod_img"><br><br><br>
+	<h4><strong>{{ product.name }}</strong></h4>
+</div></a>
+	
+	{% endfor %}
+</div><br>
+	{% endfor %}
+
+	</div>
+	</div>
+{% include "htmlbottom.html" %}

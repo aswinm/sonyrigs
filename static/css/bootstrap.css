@@ -6322,3 +6322,43 @@ input{
 	width:40%;
 	height:20%;
 }
+
+.products_page{
+	margin-top:10%;
+	color:white;
+}
+
+.prod_img{
+	position:relative;
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	-webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+	transition: all 2s;
+	z-index:0;
+}
+
+.prod_img:hover{
+	height:250px;
+	width:250px;
+	border-radius:50%;
+	z-index:100;
+	overflow:visible;
+}
+
+.products_page a{
+	color:white;
+
+}
+
+.product_image{
+	margin-top:100px;
+	width:70%;
+	height:50%;
+}
+
+.product_table{
+	margin:auto auto;
+	width:80%;
+	margin-top:50px;
+}
