@@ -74,4 +74,7 @@ def about(request):
 
 def contact(request):
     return render(request,"contact.html",{'page_title':"Contact Us"})
+
+def mudpump(request):
+    return render(request,"mudpump.html",{'page_title':"Mud Pump"})
 # Create your views here.

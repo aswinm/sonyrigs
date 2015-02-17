@@ -1,0 +1,42 @@
+{% include "htmltop.html" %}
+
+	<div class="prod_desc">
+		<div class="row">
+			<div class="col-md-4" id="cssmenu">	
+			<ul class="nav nav-stacked">
+					<li><a href="#">Water Well Rigs</a>
+					<ul class="meny1">
+						{% for prod in prod_list.waterwellrigs %}
+						<li><a href="/product/{{prod.url}}">{{ prod.name}}</a></li>
+						{% endfor %}
+					</ul>
+					</li>
+					
+
+					<li><a href="#">Mining and Exploration Rigs</a>
+					<ul class="meny1">
+						{% for prod in prod_list.miningexplorationrigs %}
+						<li><a href="/product/{{prod.url}}">{{ prod.name}}</a></li>
+
+						{% endfor %}
+					</ul>
+					</li>
+					<li><a href="#">Autoloader Rigs</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<img src="/static/images/accessories/mudpump.png" class="product_image"><br><br>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+			<img src="/static/images/mud-pump1.jpg" class="mudpump">
+			<img src="/static/images/mud-pump2.jpg" class="mudpump">
+				</div>
+			</div>
+		
+	</div>
+	
+
+{% include "htmlbottom.html" %}
