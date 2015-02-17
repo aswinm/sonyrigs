@@ -1,8 +1,40 @@
-{% include "othtop.html" %}
+{% include "htmltop.html" %}
 	<div class="products_page">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">
+		<div class="row" >
+			<div class="col-md-3" id="cssmenu">
+				<ul class="nav nav-stacked">
+					<li><a href="#">Water Well Rigs</a>
+					<ul class="meny1">
+						{% for prod in prod_list.waterwellrigs %}
+						<li><a href="/product/{{prod.url}}">{{ prod.name}}</a></li>
+						{% endfor %}
+					</ul>
+					</li>
+					
+
+					<li><a href="#">Mining and Exploration Rigs</a>
+					<ul class="meny1">
+						{% for prod in prod_list.miningexplorationrigs %}
+						<li><a href="/product/{{prod.url}}">{{ prod.name}}</a></li>
+
+						{% endfor %}
+					</ul>
+					</li>
+					<li><a href="#">Support Rigs</a>
+						{% for prod in prod_list.autoloader %}
+						<li><a href="/product/{{ prod.url }}">{{prod.name}}</a></li>
+						{% endfor %}
+					</li>
+					<li><a href="#">Accessories</a>
+					<ul class="meny1">
+						{% for prod in prod_list.accessories %}
+						<li><a href="/product/{{ prod.url }}">{{prod.name}}</a></li>
+						{% endfor %}
+					</li>
+				</ul>
+			
+			</div>
+			<div class="col-md-9">
 	
 		
 				{% for product_list in p_li %}

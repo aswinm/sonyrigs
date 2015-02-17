@@ -1,0 +1,41 @@
+{% include "htmltop.html" %}
+
+<div class="contact" id="contact">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<h2 align="center">CONTACT US</h2><br><br>
+			You are welcome to contact us using the contact form, or the office details below.
+
+			<strong><h3>SONY RIGS & HYDRAULICS PVT LTD.</h3></strong>
+			[Manufacturer & Exporter of ‘Sony’ Water Well & Mining Drilling Rigs]<br><br>
+	<p align="left" style="font-size:15px;">
+	<strong>OFFICE AND FACTORY</strong><br>
+	No.3/230D, Sankari Road,<br>
+	Tiruchengode – 637304, Namakkal District,<br>
+	Tamilnadu, INDIA.<br>
+	<br>
+	<strong>CELL</strong><br>
+	Phone: +91 9600535555<br>
+	Telefax: +91 4288 257555<br>
+	Email: sonyrigsmail@gmail.com<br>
+	</p>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-4">
+			<h2 align="center">ENQUIRY</h2>
+	<form id="contactform" align="center" style="margin-top:30px;" method="post" action="/sendmail">
+		{% csrf_token %}
+		<input type="text" id="name" placeholder="Name" class="form-control" name="name" required><br>
+		<input type="email" id="email" placeholder="Email" class="form-control" name="email" required><br>
+		<input type="text" id="contact" placeholder="Contact Number" class="form-control" name="contact" required><br>
+		<input type="text" id="subject" placeholder="Subject" class="form-control" name="subject" required><br>
+		<textarea id="message" placeholder="Message" class="form-control" rows=5 name="message" required></textarea><br>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	</div>
+	</div>
+
+</div>
+
+{% include "htmlbottom.html" %}
