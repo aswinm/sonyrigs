@@ -15,7 +15,7 @@ class Product(models.Model):
     url = models.CharField(max_length=150,primary_key=True)
     name = models.CharField(max_length=150)
     image = models.ImageField(upload_to="prodimages")
-    desc = models.TextField(max_length=2000)
+    desc = models.TextField(max_length=5500)
     cat = models.ForeignKey(Category)
 
 
